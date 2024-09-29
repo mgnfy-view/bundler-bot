@@ -1,0 +1,27 @@
+{
+    "name": "bundler-bot",
+    "version": "1.0.0",
+    "description": "The bundler bot allows you to create a token, airdrop it to some users, and then add liquidity to Uniswap V2",
+    "main": "bot/main.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon ./bot/main.js",
+        "bot": "node ./bot/main.js"
+    },
+    "keywords": [
+        "volume-bot",
+        "solidity",
+        "bundler-bot",
+        "uniswap-v2"
+    ],
+    "author": "mgnfy-view",
+    "license": "MIT",
+    "dependencies": {
+        "ethers": "^6.13.2"
+    },
+    "devDependencies": {
+        "dotenv": "^16.4.5",
+        "nodemon": "^3.1.7"
+    }
+}
