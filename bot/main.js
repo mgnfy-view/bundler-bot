@@ -18,6 +18,7 @@ async function main() {
     // Listen for the token creation event, log it, and stop the bot
     bundlerBot.on(CREATE_TOKEN_EVENT, (tokenAddress, lpAmount) => {
         console.log(`Token deployed at address ${tokenAddress}`);
+        botConfig.airdropEnabled ? console.log("Token airdropped to eligible users") : null;
         console.log(`${ethers.formatEther(lpAmount)} LP tokens were burned`);
         process.exit(0);
     });

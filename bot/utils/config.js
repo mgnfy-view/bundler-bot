@@ -1,7 +1,7 @@
 const config = {
     tokenName: "Guts",
     tokenSymbol: "GUTS",
-    tokenTotalSupply: 1_000,
+    tokenTotalSupply: 1_00,
     airdropEnabled: false,
     airdropDetails: [
         {
